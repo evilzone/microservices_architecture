@@ -1,0 +1,45 @@
+Microservices decomposition: Sidecar/ sidekick pattern
+------------------------------------------------------
+
+
+Microservices
+
+            Mobile                          Browser                     Webservices
+
+                                            Gateway
+
+Product management       Account management       Payment management        Login management       Order management
+Database                 Database                 Database                  Database                Database
+
+
+Common features to take care for each service:
+    - logging
+    - failure isolation
+    - monitoring
+    - configuration
+    - proxy to remote service
+    - etc..
+
+
+- Order management
+    sidecar
+
+- Account management
+    sidecar
+
+- Payment management
+    sidecar
+
+- Login management
+    sidecar
+
+- Product management
+    sidecar
+
+Advantages
+    - Reduces the code duplication
+    - Reduces the complexity in the main application
+    - Independent from primary application in terms of run time and the language in which
+        they are implemented - loose coupling
+    - Can access the same resource as primary application
+    - Low latency due to proximity
