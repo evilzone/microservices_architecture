@@ -1,0 +1,71 @@
+Microservices: Design patterns
+------------------------------
+
+why??
+
+- We need our services to be highly
+    - Available
+    - Scalable
+    - Resilient to failures
+    - Efficient
+
+- Design patterns help in solving the specific microservice architecture challenge
+- design patterns help in reducing risk of failure in microservices
+
+What are those principles??
+    - Decomposition
+    - Database
+    - Communication among services
+    - Integration
+    - Deployment
+    - Observability
+    - Cross-cutting concern
+
+
+Decomposition patterns
+    - By business capabilities
+    - By subdomain
+    - Strangler pattern
+    - Sidecar pattern/Service mesh
+
+Database
+    - Database per service
+    - Shared database
+    - CQRS
+    - SAGA
+    - Event sourcing
+
+Communication among services
+    - Synchronous
+    - Async event/ message based
+    - Communication medium
+        - HTTP REST xml/json
+        - Graphql
+        - gRPC
+
+Integration patterns
+    - API gateway
+    - Aggregator pattern
+        - Chain pattern
+        - Branch pattern
+    - Client side UI composition patterns
+
+Deployment patterns
+    - Multiple service instances per host
+    - Service instance per host
+    - Service instance per VM
+    - Service instance per container
+    - Server less
+    - Blue green
+    - Canary
+
+Observability
+    - Log aggregation
+    - Performance metrics
+    - Distributed tracing
+    - Health check
+
+Cross cutting concern patterns
+    - External configuration
+    - Service discovery pattern
+    - Circuit breaker pattern
