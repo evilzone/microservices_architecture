@@ -1,0 +1,22 @@
+Strangler pattern
+-----------------
+
+Monolithic
+
+         Account                ------>             Product
+        Management                                  Management
+
+
+
+Product Management has been converted into microservices architecture
+
+                                                    ------> Product Management (monolithic)
+
+Account Management    -------->          Route
+
+                                                    -------> Product Management (microservices)
+
+Transform --> Coexist --> Eliminate
+
+Strangler fig
+
