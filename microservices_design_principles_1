@@ -1,0 +1,13 @@
+Microservices: design principles
+--------------------------------
+
+what are design principles?
+
+- Independent/ Autonomous
+- Resilent/ Fault tolerant/ design to failure
+- Observable
+- Discoverable
+- Domain driven
+- Decentralization
+- High cohesion
+- single source of truth
