@@ -1,0 +1,47 @@
+Decomposition pattern:
+    - by business domain
+    - by sub domain
+
+
+There are 2 kinds of project under microservices
+
+    - monolithic to microservices
+        - brown field projects
+
+    - microservices in nature from scratch
+        - green field projects
+
+Microservice - Micro + service
+
+How micro? How small?
+
+How to decide the size of microservice?
+- business functionality
+
+
+                                        Mobile
+                                        Browser
+                                        Webservices
+
+
+
+                                       G A T E W A Y             (Online shopping portal)
+
+
+Product management      Order management        Account management          Payment management          Login management
+          database              database                  database                    database                  database
+
+
+
+- God classes
+    - Shared among different modules
+
+- Sub domain
+    - Domain driven design
+    - Bounded context
+
+
+Order management
+    - Placing order <-> database
+    - Invoice generation <-> database
+    - Order tracking <-> database
