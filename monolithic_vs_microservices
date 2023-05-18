@@ -1,0 +1,73 @@
+Monolith (backend)
+
+Online shopping portal
+----------------------
+
+                                            Controller layer
+
+Product management       Account management       Payment management        Login management       Order management
+
+                                                DAO layer
+
+                                                Database
+
+
+    -   positive aspects
+            - easy to develop
+            - simple testing
+            - quick deployment
+            - easy to scale by having multiple copy of same application (horizontal scaling)
+            - less technicality
+            - better for small scale apps
+
+    - challenges
+            - limitation in size
+            - complexity grows with time
+            - long time to release new features
+            - more time to send the fix for production fix
+            - even small change in one module needs redeployment of whole application
+            - high dependency on few human resources
+            - hiring new team and making them understand whole application is tough
+            - stuck in one technology
+            - single point of failure
+            - continuous deployment is difficult
+            - difficult to scale when we have a large code base
+            - high coupling between modules
+            - reliability and availability problem
+
+
+what's the solution
+
+Microservices
+
+                      Mobile                          Browser                     Webservices
+
+                                                      Gateway
+
+Product management       Account management       Payment management        Login management       Order management
+Database                 Database                 Database                  Database                Database
+
+
+positive aspects
+
+    - domain expertise
+    - easy and quick to scale - to demand
+    - isolated decision making
+    - self organisation
+    - quick response to change
+    - increase uptime
+    - can experiment with any tech
+    - loose coupling
+    - service reusability
+    - agile, SCRUM
+    - best for large scale apps
+
+
+challenges
+    - additional complexity with the distributed systems
+    - deployment complexity
+    - monitoring complexity
+    - increased resource consumption
+    - communication among services is challenging
+    - testing each service is also a challenge
+    - maintaining transactionality among services
