@@ -1,11 +1,10 @@
 Microservices: design principles
 --------------------------------
 
-
 what are design principles?
 
 - Independent/ Autonomous
-- Resilent/ Fault tolerant/ design to failure
+- Resilient/ Fault tolerant/ design to failure
 - Observable
 - Discoverable
 - Domain driven
@@ -13,4 +12,53 @@ what are design principles?
 - High cohesion
 - single source of truth
 
-![](../../../../Desktop/Screenshot 2023-04-21 at 09.39.43.png)
+- Independent/ Autonomous
+
+    Product Management          <->         Order Management        <->         Account Management
+              database                              database                              database
+
+    - small team size
+    - parallel development
+    - clear contracts
+    - individually deployable
+
+
+- Resilient/ Fault tolerant/ design to failure
+    - avoid single point of failure
+    - avoid cascading failure
+    - consider failure as events and analyze it properly
+
+
+- Observable
+    - centralized monitoring
+    - centralized logging
+    - health check system
+
+
+- Discoverable
+    - All services should be registered at one place
+    - It makes client's life easy when looking for specific service
+
+- Domain driven
+    - Focussed on business
+    - Focussed on core domain
+    - Focus on domain logic
+
+- Decentralization
+    - Database for each service
+    - Choice of database depends on the nature of particular service
+
+- High cohesion
+    - Do one thing only
+    - SRP
+    - A business function
+    - A business domain
+    - Easy to take new similar feature
+
+    - Why
+        - Scalability
+        - Availability
+
+- Single source of truth
+    - there should be only one source to get the complete information
+    - this helps in avoiding the duplicity
