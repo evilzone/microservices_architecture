@@ -1,0 +1,22 @@
+Event sourcing system
+
+                                                                    Order service (db)
+
+Order of events:
+    - initiated
+    - pending
+    - completed
+    - inventory update
+    - mail to user
+    - ask for feedback
+    - archive
+
+
+- state is stored as a series of events
+- any record is about the state change from previous one
+- we can always replay events to get the state at any point of time
+    - e.g. git commit
+- efficient
+- asynchronous communication
+- storage vs performance
+    - regular snapshots
