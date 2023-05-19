@@ -1,0 +1,11 @@
+Data consistency in distributed systems:
+    - eventual consistency
+        - eventual consistency guarantees low latency with some stale data
+        - forward node has no mechanism to know about the backward failed nodes
+
+    - strong/strict consistency
+        - guarantees updated/latest data with some higher latency
+        - latency will increase
+
+- data loss due to disaster
+- replicate the data across other databases
