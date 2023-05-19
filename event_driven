@@ -1,0 +1,20 @@
+Event-driven system
+-------------------
+                                                                    History service(db)
+
+
+Product service(db)                                                 Mailing service(db)
+
+                              Message broker
+                                                                    Analytics service(db)
+Order service(db)
+
+                                                                    Service-n(db)
+
+- use of message brokers
+- decoupled architecture
+- asynchronous communication
+
+
+- Event notification
+- Event carried state transfer
