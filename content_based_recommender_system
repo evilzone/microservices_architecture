@@ -1,0 +1,19 @@
+Movie recommender system | content based recommender system with heroku deployment
+----------------------------------------------------------------------------------
+
+what are recommender systems?
+- recommend movies
+- recommend songs
+
+types of recommender systems?
+
+- content based
+    - recommends on the basis of similarity of the content (tags)
+- collaborative filtering based
+    - similar interests users are recommended similar contents
+- hybrid
+
+Project flow
+------------
+
+Data ----> (1) Pre processing ----> (2) model ----> (3) website ----> (4) deploy
