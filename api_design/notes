@@ -1,0 +1,41 @@
+API design
+----------
+
+- func  GetAdmins(string groupID)
+    - result
+        - error group does not exist
+        - error group is deleted
+
+
+   - response
+        - List<Admin> admins (Admin can be JSON object)
+
+
+- where does the group belong?
+    - group service
+
+- naming is important
+- parameters defining
+- response object defining
+
+
+HTTP request
+            {routing?}
+    - GET: www.xyzabctech/messaging/admins?groupID=123
+
+        - Request { "groupID" : "123" }
+        - Response { "admins" : [{ "id" : "xyz", "name" : "admin"}] }
+
+
+
+    - set admins (List<Admin> admins, string groupID)
+        - what if they aren't members?
+
+        - when the reponse of the API is huge?
+            - Pagination
+            - fragmentation
+
+        - NO SIDE EFFECTS
+            - doing everything
+            - atomicity
+
